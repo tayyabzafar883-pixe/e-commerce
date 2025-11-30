@@ -11,10 +11,10 @@ require('./config/Cloudinry')
 let app=express()
 
 
-let allowOrigin=`https://extraordinary-dango-5f9e51.netlify.app`
+
 app.use(cookie())
 app.use(cors({
-    origin:allowOrigin,
+  origin:'http://localhost:5173',
     credentials:true
 }))
 app.use(express.json())
